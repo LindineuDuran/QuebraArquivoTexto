@@ -26,9 +26,13 @@ public class QuebraArquivoTextoApplication implements CommandLineRunner
 	@Override
 	public void run(String... args) throws Exception
 	{
-		String nomeArquivo = "CompraFinalizadaFinal.json";
-		String jsonKey = "compra_finalizada";
-		String prefixArquivo = "compra";
+		String nomeArquivo = "";
+		String jsonKey = "";
+		String prefixArquivo = "";
+
+		nomeArquivo = "CompraFinalizadaFinal.json";
+		jsonKey = "compra_finalizada";
+		prefixArquivo = "compra";
 		quebraArrayJson(nomeArquivo, jsonKey, prefixArquivo);
 
 		nomeArquivo = "Filme.json";
@@ -39,6 +43,11 @@ public class QuebraArquivoTextoApplication implements CommandLineRunner
 		nomeArquivo = "Pessoa.json";
 		jsonKey = "pessoa";
 		prefixArquivo = "pessoa";
+		quebraArrayJson(nomeArquivo, jsonKey, prefixArquivo);
+
+		nomeArquivo = "Pedido.json";
+		jsonKey = "pedido";
+		prefixArquivo = "pedido";
 		quebraArrayJson(nomeArquivo, jsonKey, prefixArquivo);
 	}
 
